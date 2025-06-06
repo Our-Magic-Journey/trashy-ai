@@ -49,7 +49,7 @@ export default function App() {
     const formData = new FormData()
     formData.append('file', image)
     try {
-      const res = await fetch('https://api_ai.purgal.xyz/predict', {
+      const res = await fetch('http://localhost:2137/predict', {
         method: 'POST',
         body: formData,
       })
