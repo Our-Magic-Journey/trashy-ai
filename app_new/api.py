@@ -27,9 +27,7 @@ class_names_frontend = {
 model = keras.models.load_model("real_wastE_model.keras")
 
 origins = [
-    "http://45.157.233.78:5174",
-    "https://ai.purgal.xyz",
-    "https://ai_old.purgal.xyz",
+    "http://localhost:5174",
 ]
 
 app.add_middleware(
