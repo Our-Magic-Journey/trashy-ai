@@ -15,14 +15,12 @@ class_names = ['biological', 'glass', 'other', 'paper', 'plastic']
 model = keras.models.load_model("model.keras")
 
 origins = [
-    "http://45.157.233.78:5174",
-    "https://ai.purgal.xyz",
-    "https://ai_old.purgal.xyz",
+    "localhost:5174",
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ← pozwala wszystkim
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
